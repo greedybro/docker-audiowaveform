@@ -51,9 +51,3 @@ sh-audiowaveform:
 		--tty \
 		--entrypoint /bin/ash \
 		greedybro/audiowaveform:$(AUDIOWAVEFORM_VERSION)
-
-## Publish audiowaveform image(s)
-push-audiowaveform:
-	$(call docker_login)
-	docker push \
-		greedybro/audiowaveform:$(AUDIOWAVEFORM_VERSION)
